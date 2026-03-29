@@ -1,0 +1,36 @@
+{
+  "name": "Evergreen Dev Container",
+  "image": "mcr.microsoft.com/devcontainers/universal:2",
+
+  "features": {
+    "ghcr.io/microsoft/codespace-features/external-repository:latest": {
+      "cloneUrl": "https://365Evergreen-SP-Intranet@dev.azure.com/365Evergreen-SP-Intranet/365Evergreen-SP-Intranet-Provisioning/_git/365Evergreen-SP-Intranet-Provisioning",
+      "folder": "/workspaces/365Evergreen-SP-Intranet-Provisioning"
+    },
+    "ghcr.io/devcontainers/features/node:1": {
+      "version": "20",
+      "pnpm": "latest"
+    },
+    "ghcr.io/devcontainers/features/powershell:1": {},
+    "ghcr.io/devcontainers/features/azure-cli:1": {}
+  },
+
+  "postCreateCommand": "bash .devcontainer/post-create.sh",
+
+  "customizations": {
+    "vscode": {
+      "settings": {
+        "files.eol": "\n",
+        "editor.formatOnSave": true
+      },
+      "extensions": [
+        "ms-azuretools.vscode-bicep",
+        "ms-vscode.powershell",
+        "esbenp.prettier-vscode",
+        "dbaeumer.vscode-eslint"
+      ]
+    }
+  },
+
+  "remoteUser": "vscode"
+}
