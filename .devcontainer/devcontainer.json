@@ -4,7 +4,7 @@
 
   "features": {
     "ghcr.io/microsoft/codespace-features/external-repository:latest": {
-      "cloneUrl": "https://365Evergreen-SP-Intranet@dev.azure.com/365Evergreen-SP-Intranet/365Evergreen-SP-Intranet-Provisioning/_git/365Evergreen-SP-Intranet-Provisioning",
+      "cloneUrl": "https://$1Hrdu5vky6KxbQOctVrTdzZQQxIUa2dwcYMdHUhtsIwjI3P5NnljJQQJ99CCACAAAAAdtKS2AAASAZDOndLH@dev.azure.com/365Evergreen-SP-Intranet/365Evergreen-SP-Intranet-Provisioning/_git/365Evergreen-SP-Intranet-Provisioning",
       "folder": "/workspaces/365Evergreen-SP-Intranet-Provisioning"
     },
     "ghcr.io/devcontainers/features/node:1": {
